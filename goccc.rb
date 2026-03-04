@@ -5,21 +5,21 @@
 class Goccc < Formula
   desc "Fast, zero-dependency CLI cost calculator and statusline for Claude Code"
   homepage "https://github.com/backstabslash/goccc"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/backstabslash/goccc/releases/download/v0.1.3/goccc_0.1.3_darwin_amd64.tar.gz"
-      sha256 "9679a5eef2616a635e740176a14a7528bb8da71853ef349b8b9e4378219b86a2"
+      url "https://github.com/backstabslash/goccc/releases/download/v0.1.4/goccc_0.1.4_darwin_amd64.tar.gz"
+      sha256 "07b53d67a7bedd542b081c0adb2f73df1348177024a3ccaab6afeb7f4a07e550"
 
       define_method(:install) do
         bin.install "goccc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/backstabslash/goccc/releases/download/v0.1.3/goccc_0.1.3_darwin_arm64.tar.gz"
-      sha256 "a693685b4fc57d950ab92c1f1df42fb8992abd14e4602f27c80c102268bbad7e"
+      url "https://github.com/backstabslash/goccc/releases/download/v0.1.4/goccc_0.1.4_darwin_arm64.tar.gz"
+      sha256 "6819827e38ba2fecb5e1078ba7261f54a730a492f29500051a04dd62dfae8b68"
 
       define_method(:install) do
         bin.install "goccc"
@@ -29,15 +29,15 @@ class Goccc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/backstabslash/goccc/releases/download/v0.1.3/goccc_0.1.3_linux_amd64.tar.gz"
-      sha256 "447505090301c634a4b6b0c06d2de0132efc0c1bdf34755ebcf56a65188d9244"
+      url "https://github.com/backstabslash/goccc/releases/download/v0.1.4/goccc_0.1.4_linux_amd64.tar.gz"
+      sha256 "6317232afeb2a12f91ce794bac8eef8a30a274c979b316c917dc5fc47d8764b1"
       define_method(:install) do
         bin.install "goccc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/backstabslash/goccc/releases/download/v0.1.3/goccc_0.1.3_linux_arm64.tar.gz"
-      sha256 "f19872b79aaf750a72aff3b2242415ac094c1f07fa47b80863d67a2077d97b8d"
+      url "https://github.com/backstabslash/goccc/releases/download/v0.1.4/goccc_0.1.4_linux_arm64.tar.gz"
+      sha256 "722f6e228992b88278cd04a05bdb9725a38f5542c44b0bad209ea0bb6533272a"
       define_method(:install) do
         bin.install "goccc"
       end
